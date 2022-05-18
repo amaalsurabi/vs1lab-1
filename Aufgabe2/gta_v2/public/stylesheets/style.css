@@ -24,7 +24,7 @@ Footer{
   background-color: cornflowerblue;
 }
 a {
-  color: white;
+  color: #00B7FF;
 }
 label{
   padding-top:0.5em;
@@ -67,7 +67,7 @@ fieldset{
 }
 ul li{
   color: white;
-  background-color: cornflowerblue;
+  background-color: #6494ed3a;
   margin-bottom: 1vh;
   margin-right: 20px;
   padding-top: 1vh;
