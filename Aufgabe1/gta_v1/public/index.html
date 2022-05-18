@@ -27,14 +27,18 @@
 
             <!-- ############### VS1Lab 1a Form 1 Start -->
             <form id="tag-form" action="/tagging" method="post">
+                <fieldset>
+                <legend>Enter new GeoTag</legend>
                <label for="latitude">Latitude</label>
-                <input id= "latitude" type="number" name="latitude" size= "20" />
+                <input id= "latitude" type="number" name="latitude" size= "20" required />
                 <label for="longitude" >Longitude</label>
-                <input id= "longitude" type="number" name="longitude" size= "20" />
+                <input id= "longitude" type="number" name="longitude" size= "20" required />
                 <label for="name">Name</label>
-                <input id= "name" type="text" name="name" size= "20" />
+                <input id= "name" type="text" name="name" size= "20" required />
                 <label for="hashtag">Hashtag</label>
-                <input id= "hashtag" type="text" name="hashtag" size= "20" />
+                <input id= "hashtag" type="text" name="hashtag" size= "20" required/>
+                <button type="submit">Add Tag</button>
+            </fieldset>
                 <!-- ... your code here ... -->
 
             </form>
@@ -47,7 +51,12 @@
 
             <!-- ############### VS1Lab 1a Form 2 Start -->
             <form class="discovery__search" id="discoveryFilterForm" action="/discovery" method="post">
-
+                <fieldset>
+                    <legend>Filter by Searchterm</legend>
+                <label for="searchterm">Search term or keywords</label>
+                <input id= "searchterm" type="text" name="searchterm" size= "20" pattern="[#]{1}[A-Za-z]{1,10}" placeholder="# + max. 10 letters" required />
+                <button type="submit">Search</button>
+                <fieldset>
                 <!-- ... your code here ... -->
 
             </form>
